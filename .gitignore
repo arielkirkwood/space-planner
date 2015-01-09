@@ -14,3 +14,4 @@
 
 # Ignore RVM run commands file
 .rvmrc
+.ruby-version
