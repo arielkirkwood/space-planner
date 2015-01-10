@@ -4,6 +4,16 @@
   <strong>Name:</strong>
   <%= @room.name %>
 </p>
+<strong>Layout</strong>
+<div class="room">
+  <% @room.width.times do %>
+    <div class="room-grid-column">
+      <% @room.length.times do %>
+        <div class="room-grid-cell"></div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to 'Edit', edit_room_path(@room) %> |
 <%= link_to 'Back', rooms_path %>

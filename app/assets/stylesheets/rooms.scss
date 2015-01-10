@@ -1,3 +1,26 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$room-grid-border: 1px solid black;
+
+.room {
+    padding: 10px;
+}
+
+.room-grid-column:last-child {
+    .room-grid-cell {
+        border-bottom: $room-grid-border;
+    }
+}
+.room-grid-cell {
+    display: table-cell;
+    width: 10px;
+    height: 10px;
+    border-left: $room-grid-border;
+    border-top: $room-grid-border;
+    background-color: cyan;
+
+    &:last-child {
+        border-right: $room-grid-border;
+    }
+}
